@@ -1,0 +1,19 @@
+--------------------功能應用--------------------
+
+W3C javascript   基礎 https://www.w3schools.com/js/default.asp
+慕課網             進階  https://www.imooc.com/
+
+
+--------------------電子書&觀念--------------------
+
+現代javascript教程     https://zh.javascript.info/
+卡斯柏前端沒有極限https://wcc723.github.io/categories/javascript/page/2/
+良葛格學習筆記       https://openhome.cc/Gossip/index.html
+
+--------------------部落格文章--------------------
+
+JavaScript 全攻略       https://dotblogs.com.tw/ncuscottblog/2018/01/26/145557
+
+
+
+--------------------影片教學--------------------
