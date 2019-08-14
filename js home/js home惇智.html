@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 第一個 -->
+    <h1>My First JavaScript</h1>
+    <button id="showDate">Click me to display Date and Time</button>
+    <p id="demo"></p>
+
+    <h1>My First JavaScript2</h1>
+    <button id="showDate2">Click me to display Date and Time</button>
+    <p id="demo2"></p>
+
+    <h1>My First JavaScript3</h1>
+    <button id="showDate3">Click me to display Date and Time</button>
+    <p id="demo3"></p>
+
+    <script>
+    var btn1 = document.getElementById('showDate');
+    // 宣告btn1 為html button的ID showDate
+    var demo = document.getElementById('demo');
+    // 宣告btn1 為html p的ID demo
+    console.log(btn1);
+    // 檢查btn1是否抓到Html的資源
+    console.log(demo);
+    // 檢查demo是否抓到Html的資源
+    btn1.onclick = function() {
+        demo.innerHTML = Date()
+    }
+    // btn1點擊時執行方法，將日期顯示於demo的文檔內容
+
+    // es6寫法
+    let btn2 = document.getElementById('showDate2');
+    // 宣告btn1 為html button的ID showDate
+    let demo2 = document.getElementById('demo2');
+    // 宣告btn1 為html p的ID demo
+    console.log(btn2);
+    // 檢查btn2是否抓到Html的資源
+    console.log(demo2);
+    // 檢查demo2是否抓到Html的資源
+    btn2.onclick = function() {
+        demo2.innerHTML = Date()
+    }
+    // btn1點擊時執行方法，將日期顯示於demo的文檔內容
+
+    // jquery寫法
+    // 求棋棋示範
+    </script>
+</body>
+</html>
