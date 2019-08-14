@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #pic {
+            height: 300px;
+            width: 300px;
+        }
+        .green {
+            background-color:darkolivegreen;
+        }
+        .red {
+            background-color: indianred;
+        }
+    </style>
+</head>
+<body>
+    <div id="pic">
+    </div>
+    <button type="button" id="turn_green">
+        turn green
+    </button>
+    <button type="button" id="turn_red">
+        turn red
+    </button>
+    <script>
+   var turn_green = document.querySelector("#turn_green");
+   var turn_red = document.querySelector("#turn_red");
+   var pic = document.querySelector("#pic");
+
+   turn_green.onclick = function(){
+       pic.classList.remove("red");
+       pic.classList.add("green")       
+   }
+   turn_red.onclick = function(){
+       pic.classList.remove("green");
+       pic.classList.add("red")     
+   }
+    </script>
+</body>
+</html>

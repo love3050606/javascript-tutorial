@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<p id="demo">bababa</p>
+<button type="button" id="btn">ooh</button>
+
+<p id="demo2">blablabla</p>
+<button type="button" id="btn2">haa!</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+var demo = document.querySelector("#demo")
+var btn = document.querySelector("#btn")
+
+btn.onclick = function(){
+    demo.textContent = "heyheyhey";
+}
+$("#btn2").click(function(){
+    var demo2 = document.querySelector("#demo2");
+    demo2.textContent = ("oolala")
+    
+})
+</script>
+
+</body>
+
+</html>
