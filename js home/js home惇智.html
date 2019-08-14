@@ -20,6 +20,7 @@
     <button id="showDate3">Click me to display Date and Time</button>
     <p id="demo3"></p>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
     var btn1 = document.getElementById('showDate');
     // 宣告btn1 為html button的ID showDate
@@ -47,9 +48,15 @@
         demo2.innerHTML = Date()
     }
     // btn1點擊時執行方法，將日期顯示於demo的文檔內容
-
+    
     // jquery寫法
-    // 求棋棋示範
+    $('#showDate3').click(function() {
+        $('#demo3').html(Date)
+    })
+    
+    
+   
+    
     </script>
 </body>
 </html>
