@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>What Can Javascript Do?</h2>
+    <p>Javascript can change HTML attribute valuws.</p>
+    <p>In this case Javascript can changes the value of the src(source) attribute of an image.</p>
+    <button id="on">Turn on the light</button>
+    <img id="bulb" src="http://demo.sc.chinaz.com/Files/pic/icons/6470/r2.png" alt="">
+    <button id="off">Turn off the light</button>
+
+    <h2>What Can Javascript Do?</h2>
+    <p>Javascript can change HTML attribute valuws.</p>
+    <p>In this case Javascript can changes the value of the src(source) attribute of an image.</p>
+    <button id="on2">Turn on the light</button>
+    <img id="bulb2" src="http://demo.sc.chinaz.com/Files/pic/icons/6470/r2.png" alt="">
+    <button id="off2">Turn off the light</button>
+
+    <h2>What Can Javascript Do?</h2>
+    <p>Javascript can change HTML attribute valuws.</p>
+    <p>In this case Javascript can changes the value of the src(source) attribute of an image.</p>
+    <button id="on3">Turn on the light</button>
+    <img id="bulb3" src="http://demo.sc.chinaz.com/Files/pic/icons/6470/r2.png" alt="">
+    <button id="off3">Turn off the light</button>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // 舊版寫法
+        var on = document.getElementById('on');
+        var off = document.getElementById('off')
+        var bulb = document.getElementById('bulb');
+        on.onclick = function () {
+            bulb.src='http://demo.sc.chinaz.com/Files/pic/icons/6470/r2.png'
+        }
+        off.onclick = function () {
+            bulb.src='https://www.ikea.com/tw/zh/images/products/ryet-led-deng-pao-e-liu-ming-bai-se__0505047_PE633670_S4.JPG'
+        }
+        // ES6
+        let on2 = document.getElementById('on2');
+        let off2 = document.getElementById('off2')
+        let bulb2 = document.getElementById('bulb2');
+        on2.onclick = function () {
+            bulb2.src='http://demo.sc.chinaz.com/Files/pic/icons/6470/r2.png'
+        }
+        off2.onclick = function () {
+            bulb2.src='https://www.ikea.com/tw/zh/images/products/ryet-led-deng-pao-e-liu-ming-bai-se__0505047_PE633670_S4.JPG'
+        }
+
+        // Jquery
+        $('#on3').click(function () {
+            $('#bulb3').attr('src','http://demo.sc.chinaz.com/Files/pic/icons/6470/r2.png')
+        })
+        $('#off3').click(function () {
+            $('#bulb3').attr('src','https://www.ikea.com/tw/zh/images/products/ryet-led-deng-pao-e-liu-ming-bai-se__0505047_PE633670_S4.JPG')
+        })
+    </script>
+</body>
+
+</html>

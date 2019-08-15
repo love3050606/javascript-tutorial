@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>What Can Javascript Do?</h2>
+    <p id="demo">Javascript can change HTML contect</p>
+    <button id="btn">Click Me!</button>
+
+    <h2>What Can Javascript Do?</h2>
+    <p id="demo2">Javascript can change HTML contect</p>
+    <button id="btn2">Click Me!</button>
+
+    <h2>What Can Javascript Do?</h2>
+    <p id="demo3">Javascript can change HTML contect</p>
+    <button id="btn3">Click Me!</button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // 舊版寫法
+    var demo = document.getElementById('demo');
+    var btn = document.getElementById('btn');
+    btn.onclick=function() {
+        demo.innerHTML='Hellow JavaScript!'
+    }
+     // ES6寫法
+
+    let demo2 = document.getElementById('demo2');
+    let btn2 = document.getElementById('btn2');
+    btn2.onclick=function() {
+        demo2.innerHTML='Hellow JavaScript!'
+    }
+      // Jquery寫法
+    $('#btn3').click(function () {
+        $('#demo3').html('Hellow Javascript!')
+    })
+
+    </script>
+</body>
+</html>
