@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My First Web Page</h1>
+    <p>My first paragraph</p>
+    <button id="btn">Try it</button>
+
+    <h1>My First Web Page</h1>
+    <p>My first paragraph</p>
+    <button id="btn2">Try it</button>
+
+    <h1>My First Web Page</h1>
+    <p>My first paragraph</p>
+    <button id="btn3">Try it</button>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        var btn = document.getElementById('btn');
+        btn.onclick = function () {
+            window.alert(1+1)
+        }
+
+        let btn2 = document.getElementById('btn2');
+        btn2.onclick = function () {
+            window.alert(9+9)
+        }
+
+        $('#btn3').click(function () {
+            window.alert(1+1)
+        })
+   
+   
+    </script>
+</body>
+</html>
